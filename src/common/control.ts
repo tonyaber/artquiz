@@ -4,7 +4,7 @@ class Control<NodeType extends HTMLElement = HTMLElement>{
   constructor(parentNode: HTMLElement | null, tagName = 'div', className = '', content = '') {
     const el = document.createElement(tagName);
     el.className = className;
-    el.innerHTML = content;
+    el.textContent = content;
     if (parentNode) {
       parentNode.append(el);
     }
